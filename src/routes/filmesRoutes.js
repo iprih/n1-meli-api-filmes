@@ -4,5 +4,6 @@ const controller = require('../controller/filmesController')
 
 router.get("/", controller.get)
 
+router.get("/:director",controller.getByDiretor)
 
 module.exports = router
