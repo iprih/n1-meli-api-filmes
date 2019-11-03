@@ -3,7 +3,7 @@ const app = express()
 
 const filmes = require('./routes/filmesRoutes')
 
-//app.use(express.json())
+app.use(express.json())
 
 app.use("/filmes", filmes)
 
